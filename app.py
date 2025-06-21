@@ -52,5 +52,7 @@ input_data = pd.DataFrame([{
 
 # Predict
 if st.button("Predict Price"):
-    prediction = model.predict(input_data)[0]
+    # prediction = model.predict(input_data)[0]
+    prediction = model.feature_names_in_
+    # print(model.feature_names_in_)
     st.success(f"💰 Estimated Flight Price: ₹{round(prediction, 2)}")
