@@ -56,4 +56,4 @@ if st.button("Predict Price"):
     prediction = model.feature_names_in_
     # print(model.feature_names_in_)
     # st.success(f"💰 Estimated Flight Price: ₹{round(prediction, 2)}")
-    st.success(f"💰 Estimated Flight Price: prediction")
+    st.success(f"💰 Estimated Flight Price: {prediction}")
